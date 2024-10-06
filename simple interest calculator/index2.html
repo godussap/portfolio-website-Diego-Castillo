@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Interest Calculator</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+</head>
+<body>
+  <div id="app">
+    <h1>Simple Interest Calculator</h1>
+    <form @submit.prevent="calculateInterest">
+      <div>
+        <label for="principal">Principal:</label>
+        <input type="number" v-model="principal" id="principal" required>
+      </div>
+      <div>
+        <label for="rate">Rate (%):</label>
+        <input type="number" v-model="rate" id="rate" required>
+      </div>
+      <div>
+        <label for="time">Time (years):</label>
+        <input type="number" v-model="time" id="time" required>
+      </div>
+      <button type="submit">Calculate Interest</button>
+    </form>
+    <div v-if="interest !== null">
+      <h2>Calculated Interest: {{ interest }}</h2>
+    </div>
+  </div>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data: {
+        principal: '',
+        rate: '',
+        time: '',
+        interest: null
+      },
+      methods: {
+        calculateInterest() {
+          const P = parseFloat(this.principal);
+          const r = parseFloat(this.rate) / 100;
+          const t = parseFloat(this.time);
+          this.interest = P * r * t;
+        }
+      }
+    });
+  </script>
+</body>
+</html>

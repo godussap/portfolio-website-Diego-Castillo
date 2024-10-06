@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Custom Component</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@3"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>Custom Input Component</h1>
+        <custom-input v-model="inputValue"></custom-input>
+        <p>Value: {{ inputValue }}</p>
+    </div>
+
+    <script>
+        // Define the CustomInput component
+        const CustomInput = {
+            name: 'CustomInput',
+            props: {
+                modelValue: {
+                    type: [String, Number],
+                    default: ''
+                }
+            },
+            template: `
+                <input
+                    :value="modelValue"
+                    @input="updateValue($event.target.value)"
+                />
+            `,
+            methods: {
+                updateValue(value) {
+                    this.$emit('update:modelValue', value);
+                }
+            }
+        };
+
+        // Create the Vue app
+        const app = Vue.createApp({
+            components: {
+                CustomInput
+            },
+            data() {
+                return {
+                    inputValue: ''
+                };
+            }
+        });
+
+        // Mount the Vue app
+        app.mount('#app');
+    </script>
+</body>
+</html>

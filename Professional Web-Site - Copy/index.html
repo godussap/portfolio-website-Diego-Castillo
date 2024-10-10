@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Web-site</title>
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+  <script src="https://unpkg.com/vue@3"></script>
+  <script src="app.js" defer></script>
+  
+  
+</head>
+<body>
+  <div class="background">
+    <nav class="navbar ">
+      <div class=" container-fluid">
+          <ul class="navbar-nav">
+           <li  v-for="(link,index) in links" class="nav-item" :key="index">
+            <a 
+            class="nav-link" 
+             v-bind:href="link.url">
+             {{ link.text }}</a>
+           </li>
+          </ul>
+      </div>
+      
+    <div id="app" class="container">
+          <section>
+            <div class="im">
+              <a href="#"><img class="image" src="./image/d.jpg" alt="Diego Castillo" class="profile-image"/></a>
+            </div>
+          </section>
+          <div id="co">
+            <h1>{{ welcome }}</h1>
+            <p>{{ content }}</p>
+            <p>{{ content1 }}</p>
+          </div>
+          
+      </nav>
+    </div>
+  </div>
+  <footer class="footer">
+    <p>&copy; 2024 Diego Castillo, All rights reserved.</p>
+ </footer>
+ 
+</body>
+</html>

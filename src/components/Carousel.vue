@@ -45,21 +45,24 @@
     overflow: hidden;
     width: 100%;
     max-width: 600px;
+    height: 100%;
     margin: auto;
   
     .carousel-wrapper {
       display: flex;
       transition: transform 0.5s ease-in-out;
+      height: 100%;
     }
   
     .carousel-item {
       min-width: 100%;
+      height: 100%;
       
       img {
         width: 100%;
-        height: auto;
+        height: 100%;
         display: block;
-        margin-right: 200px;
+        
       }
     }
   

@@ -23,6 +23,8 @@
         require('@/assets/slide/neworleans.jpg'),
         require('@/assets/slide/miami.jpg'),
         require('@/assets/slide/babies.jpg'),
+        require('@/assets/slide/fam.jpg'),
+        require('@/assets/slide/wife.jpg'),
       ]
     }
    }
@@ -34,8 +36,41 @@
 
   .about-page{
     text-align: center;
-    padding: 50px;
+    padding: px;
+  }
+  
+  .h3{
+    margin: 40px 0 0;
   }
 
+  .back{
+    background-image: url('../assets/aboutbackground/li.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text{
+    text-align: center;
+    color:black;
+    font-family: Avenir ,Helvetica, Arial, Helvetica, sans-serif;
+    justify-content: center;
+    font-size: medium;
+  }
+
+  .footer{
+    background-color: gray;
+    color:#333;
+    padding: 20px;
+    text-align: center;
+    justify-content: center;
+  }
  </sytle>
  

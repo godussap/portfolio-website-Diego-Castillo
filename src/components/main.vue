@@ -5,10 +5,9 @@
   </div>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2><p>I am Diego Castillo , I hope you can see this webpage as my passion and dedication.</p></h2>
   <h2 >
-    <p class="p">
-      I am Diego Castillo . My future career to be a successful programmer and be an example for my kids, that if you have a dream go chase it. 
-    </p>
+    
   </h2>
  </div>
  </div>
@@ -22,7 +21,7 @@
 export default {
   name: 'HelloView',
   props: {
-    msg: String
+    msg: String,
     
   }
 }

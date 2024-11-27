@@ -41,6 +41,7 @@ nav {
     &:hover {
       color: #052c7a; /* Optional: Add hover effect */
       transition: 0.5s ease-in-out;
+      text-decoration: underline;
     }
   }
 

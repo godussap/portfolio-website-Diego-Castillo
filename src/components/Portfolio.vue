@@ -72,11 +72,23 @@
   
         a {
           text-decoration: none;
-          color: #007bff;
+          color: gray;
+          text-decoration: none;
+          color: #fff;
+          width: 100px;
+          padding: 25px 20px;
+          font-size: 15px;
+          text-transform: uppercase;
+          text-align: center;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+          display: inline-block;
+          transition: color 0.5s ease-in-out;
         }
   
         a:hover {
           text-decoration: underline;
+          color: #052c7a; /* Optional: Add hover effect */
+          transition: 0.5s ease-in-out;
         }
   
         p {

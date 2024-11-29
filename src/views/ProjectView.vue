@@ -15,13 +15,14 @@
       </section>
   
       <div class="contact-card">
-        <h3>Connect with me</h3>
+        
         <p>I am going to be adding more projects in the future.</p>
       </div>
   
       <footer class="footer">
         <p>&copy; 2024 Diego Castillo, All rights reserved.</p>
         <div class="social-links">
+            <h3>Connect with me</h3>
             <a 
            href="https://github.com/godussap?tab=repositories" 
          target="_blank" 
@@ -31,9 +32,6 @@
       <i class="fab fa-github"></i> GitHub
     </a>
           
-          <a href="sebastiancastillo0312@gmail.com">
-            <i class="fas fa-envelope"></i>
-          </a>
         </div>
       </footer>
     </div>
@@ -102,13 +100,31 @@
     align-items: center;
     justify-content: center;
 }
+.social-links {
+    display: flex;
+    gap: 15px; /* Add spacing between icons */
+}
+
+.social-links a {
+    color: #333;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social-links a:hover {
+    color: #4078c0;
+}
 .footer{
     background-color:gray;
     color: #333;
     padding: 20px;
     text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
   }
+  .footer p {
+    margin: 0;
+}
   .contact-card {
   background: rgba(255, 255, 255, 0.9);
   background-size: cover;

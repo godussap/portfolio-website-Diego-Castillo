@@ -1,7 +1,7 @@
 <template>
  <div class="back">
   <Carousel class="carousel" :images="carouselImages"></Carousel>
-   <M -message="Here are some pictures that I love to do and a little bit of family, specially my wife and kids who has helped throught this journey "/>
+   <M -message="Here are some pictures that I love to do and a little bit of family, specially my wife and kids who have helped throught this journey "/>
   </div>
   
  </template>
@@ -25,6 +25,7 @@
         require('@/assets/slide/babies.jpg'),
         require('@/assets/slide/fam.jpg'),
         require('@/assets/slide/wife.jpg'),
+        require('@/assets/slide/babypup.jpg'),
       ]
     }
    }

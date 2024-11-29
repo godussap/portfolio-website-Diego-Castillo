@@ -90,7 +90,36 @@ export default {
 }
 .form-group {
   margin-bottom: 15px;
+  display:flex;
+  flex-direction: column;
   
+}
+.form-group label {
+
+margin-bottom: 5px; 
+
+font-weight: bold; 
+
+}
+.form-group {
+
+margin-bottom: 10px;
+
+}
+.form-group input,
+
+.form-group textarea {
+
+  padding: 10px; /* Add padding for comfort */
+
+  border: 1px solid #ccc; /* Add border */
+
+  border-radius: 4px; /* Rounded corners */
+
+  width: 100%; /* Full width of the parent */
+
+  box-sizing: border-box; /* Include padding and border in width */
+
 }
 .form-note {
   margin-top: 20px;
@@ -98,6 +127,7 @@ export default {
   color: #555;
   text-align: center;
 }
+
 .success-message {
   margin: 20px auto; /* Centering on the page */
   color: green;
@@ -133,15 +163,13 @@ export default {
   .contact {
     padding: 10px;
   }
-  .form-group {
-    margin-bottom: 10px;
-  }
+  
   button {
   margin-top: 10px;
   background-color: gray;
   color: white;
   padding: 10px 20px;
-  border: 4px;
+  border: none;
   cursor: pointer;
   transition: background-color 0.5s ease-in-out;
 }

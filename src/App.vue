@@ -6,6 +6,8 @@ import Message from '@/components/App.vue';
     <router-link to="/about">About</router-link>
     <router-link to="/Contact">Contact</router-link>
     <router-link to="/Project">Project</router-link>
+    <router-link to="/Experience">Experience</router-link>
+    <router-link to="/Hobbies">Hobbies</router-link>
   </nav>
   <router-view />
 </template>

@@ -2,6 +2,9 @@
 
 import { register } from 'register-service-worker'
 
+
+
+
 if (process.env.NODE_ENV === 'production') {
   register(`${process.env.BASE_URL}service-worker.js`, {
     ready () {
@@ -9,7 +12,9 @@ if (process.env.NODE_ENV === 'production') {
         'App is being served from cache by a service worker.\n' +
         'For more details, visit https://goo.gl/AFskqB'
       )
+      console.log('Debug info');
     },
+    
     registered () {
       console.log('Service worker has been registered.')
     },
@@ -30,3 +35,17 @@ if (process.env.NODE_ENV === 'production') {
     }
   })
 }
+
+// Direct Service Worker Registration (optional)
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register(`${process.env.BASE_URL}service-worker.js`)
+    .then(registration => {
+      console.log('Service Worker registered with scope:', registration.scope);
+    })
+    .catch(error => {
+      console.error('Error during service worker registration:', error);
+    });
+} else {
+  console.log('Service Workers are not supported in this browser.');
+}
+

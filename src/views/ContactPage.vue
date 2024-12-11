@@ -56,11 +56,15 @@ export default {
     submitForm() {
       try {
         // Simulate sending form data
-        console.log('Form submitted:', this.form);
+        console.log('submiting:', this.form);
         this.submitted = true;
       } catch (error) {
         console.error('Error submitting form:', error);
       } finally {
+        this.resetForm();
+      }
+      },
+      resetForm(){
         // Reset form fields
         this.form.firstname = '';
         this.form.lastname='',
@@ -71,7 +75,6 @@ export default {
         }, 5000);
       }
     },
-  },
     
 };
 </script>

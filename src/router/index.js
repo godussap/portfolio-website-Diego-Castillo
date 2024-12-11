@@ -1,13 +1,14 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ContactPage from '../views/ContactPage.vue'
-import AboutView from '../views/AboutView.vue'
+
 import PortfolioView from '@/views/PortfolioView.vue'
 import ProjectView from '@/views/ProjectView.vue'
 import ExperienceView from '@/views/ExperienceView.vue'
 import HobbiesView from '@/views/HobbiesView.vue'
 
 const routes = [
+ 
   {
     path: '/',
     name: 'home',
@@ -16,7 +17,7 @@ const routes = [
   {
     path:'/',
     name:'about',
-    component:AboutView
+    component: () => import(/* webpackChunkName: "about" */ '@/views/AboutView.vue'),
   },
   {
     path:'/',

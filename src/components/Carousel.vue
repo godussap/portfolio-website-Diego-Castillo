@@ -2,7 +2,7 @@
     <div class="carousel">
       <div class="carousel-wrapper" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
         <div class="carousel-item" v-for="(image, index) in images" :key="index">
-          <img :src="image" alt="Carousel item" />
+          <img v-lazy="image" loading="lazy"   alt="Carousel item" />
         </div>
       </div>
       <button class="nav prev" @click="prevSlide">❮</button>
@@ -23,6 +23,7 @@
     data() {
       return {
         currentIndex: 0,
+        
       };
     },
     methods: {
@@ -39,7 +40,7 @@
   };
   </script>
   
-  <style scoped lang="scss">
+  <style scoped>
   .carousel {
     position: relative;
     overflow: hidden;

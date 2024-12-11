@@ -33,9 +33,9 @@
  
  </script>
 
- <sytle scope lang="scss">
-
-  .about-page{
+<style scoped >
+/* Styles for about page*/
+.about-page{
     text-align: center;
     padding: px;
   }
@@ -73,5 +73,4 @@
     text-align: center;
     justify-content: center;
   }
- </sytle>
- 
+</style>

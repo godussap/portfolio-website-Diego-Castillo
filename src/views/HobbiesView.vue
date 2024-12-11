@@ -6,7 +6,7 @@
       
       <div class="hobbies-list">
         <div class="hobby" v-for="hobby in hobbies" :key="hobby.id">
-          <img :src="hobby.image" :alt="hobby.title" />
+          <img v-lazy="hobby.image" loading="lazy"  :alt="hobby.title" />
           <h2>{{ hobby.title }}</h2>
           <p>{{ hobby.description }}</p>
         </div>
@@ -46,7 +46,7 @@
   };
   </script>
   
-  <style scoped lang="scss">
+  <style scoped>
 .hobbies-page {
     padding: 20px;
     max-width: 800px;

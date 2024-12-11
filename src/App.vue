@@ -11,6 +11,15 @@ import Message from '@/components/App.vue';
   </nav>
   <router-view />
 </template>
+<script>
+module.exports = {
+  optimization: {
+    splitChunks: {
+      chunks: 'all',
+    },
+  },
+};</script>
+
 
 <style lang="scss">
 #app {

@@ -48,7 +48,7 @@
   };
   </script>
   
-  <style scoped lang="scss">
+  <style scoped >
   .portfolio {
     padding: 20px;
     text-align: center;

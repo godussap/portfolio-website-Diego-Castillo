@@ -6,7 +6,8 @@ Table of Contents
 =================
 
   * [Home](https://godussap.github.io/portfolio-website-Diego-Castillo/)
-  * ![screenshot](screenshots/grocery.png)
+  * [About](https://godussap.github.io/portfolio-website-Diego-Castillo/about)
+  * [Contact]
   * [Diego Castillo](#license)
 
 
